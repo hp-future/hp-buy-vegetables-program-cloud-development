@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Count": "./components/count/index",
+    "Popup": "./components/popup/index",
+    "Settlement": "./components/settlement/index",
+    "BottomBar": "./components/bottom-bar/index"
+  }
+}

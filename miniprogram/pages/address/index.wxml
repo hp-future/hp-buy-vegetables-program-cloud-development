@@ -1,0 +1,16 @@
+<view class="address-container">
+  <view class="content">
+    <view class="address-item">
+      <view>长德公寓</view>
+      <view>x幢x单元xxx</view>
+      <view>xx先生 01234567890</view>
+      <text class="iconfont icon-bianji" bindtap="editAddressHandler"></text>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="btn">
+      <text class="icon_add">+</text>
+      <text>添加新地址</text>
+    </view>
+  </view>
+</view>

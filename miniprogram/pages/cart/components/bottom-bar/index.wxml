@@ -1,0 +1,18 @@
+<wxs module="m1">
+  var toFi = function (num) {
+    return num.toFixed(2)
+  }
+  module.exports.toFi = toFi;
+</wxs>
+
+<view class="bottom-bar-container">
+  <view class="btn" bindtap="goSettlementHandler">
+    去结算
+    <text wx:if="{{selectGoodsCount !== 0}}">({{selectGoodsCount}})</text>
+  </view>
+  <view class="total-price">
+
+    <text>￥</text>{{m1.toFi(totalPrice)}}
+  </view>
+  <text class="total">合计</text>
+</view>

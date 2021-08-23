@@ -1,0 +1,25 @@
+<view class="cart-container">
+  <view class="top">
+    <text class="select-all-btn" bindtap="selectAllHandler">{{selectGoodsArr.length === cartList.length ? '全不选' : '全选'}}</text>
+    <text class="delete-btn" bindtap="deleteCartGoods">删除</text></view>
+  <view class="cart-content">
+    <block wx:for="{{cartList}}" wx:key="_id">
+      <view class="cart-item">
+        <checkbox-group bindchange="selectChange" data-index="{{index}}" data-goods="{{item}}">
+          <checkbox value="{{item._id}}" checked="{{selectGoodsArr[index]._id === item._id}}"/>
+        </checkbox-group>
+        <image src="cloud://prod-huangguoquan.7072-prod-huangguoquan-1306526183/qingcai.png"></image>
+          <view class="goods-content">
+            <view class="goods-name">{{item.name}} {{item.weight}}g</view>
+            <view class="goods-price"><text>￥</text>{{item.price}}</view>
+            <Count goods="{{item}}" count="{{item.count}}" index="{{index}}" bindsubCountEvent="subCountHandler" bindaddCountEvent="addCountHandler"></Count>
+          </view>
+      </view>
+    </block>
+  </view>
+  <Popup show="{{showPopup}}" content="确定删除选中的商品吗？" bind:confirmEvent="confirmHandler"></Popup>
+  <BottomBar totalPrice="{{totalPrice}}" selectGoodsCount="{{selectGoodsArr.length}}" bind:goSettlementEvent="goSettlementHandler"></BottomBar>
+  <page-container show="{{showSettlement}}" position="center">
+    <Settlement totalPrice="{{totalPrice}}"></Settlement>
+  </page-container>
+</view>

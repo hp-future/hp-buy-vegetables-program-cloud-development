@@ -1,0 +1,63 @@
+.edit-address-container {
+  width: 100vw;
+  height: 100vh;
+}
+.edit-address-container .form-item {
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.edit-address-container .form-item label {
+  width: 112rpx;
+  margin-right: 16rpx;
+  color: #666;
+}
+.edit-address-container .form-item input {
+  flex: 1;
+  height: 100%;
+  padding-right: 40rpx;
+  box-sizing: border-box;
+}
+.address-box {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gender radio {
+  transform: scale(0.7);
+  transform-origin: left;
+}
+.gender radio text {
+  display: inline-block;
+  transform: scale(1.25);
+  margin-left: 10rpx;
+}
+.form-item switch {
+  margin-left: auto;
+  transform: scale(0.8);
+}
+.save-btn {
+  width: calc(100% - 40rpx);
+  height: 56rpx;
+  line-height: 56rpx;
+  border-radius: 56rpx;
+  text-align: center;
+  color: #fff;
+  margin: 20rpx auto 0;
+  background-color: rgb(7, 193, 96);
+}
+.delete-btn {
+  position: fixed;
+  bottom: 40rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #aaa;
+  font-size: 28rpx;
+}

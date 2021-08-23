@@ -1,0 +1,4 @@
+<!--pages/my/index.wxml-->
+<text>个人中心</text>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>
+<open-data type="userAvatarUrl"></open-data>

@@ -1,0 +1,38 @@
+<view class="edit-address-container">
+  <view class="form-item">
+    <label for="">联系人</label>
+    <input type="text" value="{{addressInfo.user_name}}" focus />
+  </view>
+  <view class="form-item">
+    <label for=""></label>
+    <radio-group class="gender" bindchange="selectGenderHandler">
+      <radio value="0" checked="{{true}}">
+        <text>先生</text>
+      </radio>
+      <radio value="1">
+        <text>女士</text>
+      </radio>
+    </radio-group>
+  </view>
+  <view class="form-item">
+    <label for="">手机号</label>
+    <input type="number" value="{{addressInfo.mobile}}" />
+  </view>
+  <view class="form-item">
+    <label for="">收货地址</label>
+    <view class="address-box" bindtap="selectAddressHandler">
+      <text>{{addressInfo.address}}</text>
+      <text class="iconfont icon-right"></text>
+    </view>
+  </view>
+  <view class="form-item">
+    <label for="">门牌号</label>
+    <input type="text" value="{{addressInfo.house_number}}" />
+  </view>
+  <view class="form-item">
+    <label style="width: fit-content;">设为默认地址</label>
+    <switch checked="{{addressInfo.is_default}}" bindchange="setDefaultAddressHandler"/>
+  </view>
+  <view class="save-btn" bindtap="saveHandler">保存并使用</view>
+  <text class="delete-btn" bindtap="deleteHandler">删除地址</text>
+</view>

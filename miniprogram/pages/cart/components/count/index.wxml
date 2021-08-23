@@ -1,0 +1,8 @@
+<view class="count-container">
+  <view class="content">
+    <view class="btn add-btn" bindtap="subCountHandler">-</view>
+    <view class="count-box">{{count}}</view>
+    <view class="btn sub-btn" bindtap="addCountHandler">+</view>
+  </view>
+  <Popup show="{{showPopup}}" bind:confirmEvent="confirmHandler"></Popup>
+</view>

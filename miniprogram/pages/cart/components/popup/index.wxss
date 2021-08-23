@@ -1,0 +1,47 @@
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 200rpx;
+  border: 1px solid #eee;
+  border-radius: 12rpx;
+  background-color: #fff;
+  z-index: 1;
+  animation: animate 0.3s;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.content {
+  width: 100%;
+  height: 140rpx;
+  line-height: 140rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.footer {
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  align-items: center;
+}
+.line {
+  width: 1px;
+  height: 20rpx;
+  background-color: #eee;
+}
+.popup-container .btn {
+  flex: 1;
+  text-align: center;
+  font-weight: 400;
+  color: #4CD964;
+  font-size: 32rpx;
+  font-family: "微软雅黑";
+}

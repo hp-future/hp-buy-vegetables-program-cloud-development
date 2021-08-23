@@ -1,0 +1,25 @@
+<view class="home-container">
+  <view class="aside">
+    <block wx:for="{{goodsClassList}}" wx:key="code">
+      <view
+        class="{{activeCode === item.code ? 'aside-item is-active' : 'aside-item'}}"
+        bindtap="switchGoodsClassHandler"
+        data-code="{{item.code}}"
+      >{{item.name}}</view>
+    </block>
+  </view>
+  <view class="content">
+    <block wx:for="{{goodsList}}" wx:key="name">
+      <view class="content-item">
+        <image class="goods-img" src="cloud://prod-huangguoquan.7072-prod-huangguoquan-1306526183/qingcai.png"></image>
+        <view class="goods-content">
+          <view class="goods-name">{{item.name}} {{item.weight}}g</view>
+          <view class="goods-price"><text>￥</text>{{item.price}}</view>
+          <text class="cart-btn iconfont icon-gouwuche" data-goods="{{item}}" data-index="{{index}}" bindtap="addToCartHandler">
+            <text class="goods-count" wx:if="{{item.count > 0}}">{{item.count}}</text>
+          </text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

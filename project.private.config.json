@@ -1,0 +1,42 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/cart/index",
+          "pathName": "pages/cart/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/index",
+          "pathName": "pages/my/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/address/index",
+          "pathName": "pages/address/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/address/edit-address/index",
+          "pathName": "pages/address/edit-address/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

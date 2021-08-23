@@ -1,0 +1,1 @@
+"C:\软件包\微信小程序-开发工具\微信web开发者工具\cli.bat" cloud functions deploy --e prod-huangguoquan --n quickstartFunctions --r --project "C:\Users\hp\Desktop\个人练习\买菜小程序\cloud-development" --report

@@ -1,0 +1,8 @@
+<view class="popup-container" wx:if="{{show}}">
+  <view class="content">{{content}}</view>
+  <view class="footer">
+    <view class="btn" bindtap="cancleHandler">取消</view>
+    <view class="line"></view>
+    <view class="btn" bindtap="confirmHandler">确定</view>
+  </view>
+</view>
